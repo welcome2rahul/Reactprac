@@ -1,13 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import ReactDOM from 'react-dom';
+import Home from './Home';
 
 function App(props) {
-  return (
+
+
+
+  return(
     <div>
-        <h1>Your Name : {props.name}</h1>
+      <Home />
     </div>
-  );
+  )
+
 }
-ReactDOM.render ( <App name = "rahul" empid= "emp101" />) 
-export default App;
+
+export default App ;

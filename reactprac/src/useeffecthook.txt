@@ -1,0 +1,79 @@
+import React ,{useState}from 'react';
+
+import './App.css';
+
+function App(props) {
+
+  const [count,setCount] = useState(4);
+
+  const decrementCount = () =>{
+    setCount(prevCount => prevCount - 1 )
+  }
+  
+  const incrementCount = () => {
+    setCount(prevCount => prevCount + 1)
+  }
+
+
+  return (
+    <div>
+        <button onClick ={decrementCount}>-</button>
+        <span>{count}</span>
+        <button onClick = {incrementCount}>+</button>
+    </div>
+  );
+}
+
+export default App ;
+
+
+prop concept
+
+// const Emp = (props)=> {
+//   return(
+//   <h1>Your Name : {props.name}</h1>)
+
+// }
+
+// Emp.Proptypes={
+//   name : Proptypes.string.isRequired,
+// }
+
+
+import React from 'react'
+
+export default function Header({title,name}) {
+    
+
+    return (
+       <div style ={{background : 'yellow',padding : 20,fontFamily : 'sans-serif',width:400}}>
+        <h1>{title}</h1>
+        <h2>{name}</h2>
+        <p>This Is the Dummy Text</p>
+
+       </div>
+    )
+}
+
+appp.js
+
+import React from 'react';
+
+import './App.css';
+import Header from './Header';
+
+function App(props) {
+
+  return (
+    <div>
+      <Header title='Welcome to 1st Box' name ='Rahul Kumar' />
+      <hr/>
+      <Header title='Welcome to 1st Box' name ='Ravi Kumar' />
+      <hr />
+      
+
+    </div>
+  );
+}
+
+export default App ;

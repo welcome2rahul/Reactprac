@@ -1,0 +1,60 @@
+
+
+
+.head{
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.heading{
+    
+    color: whitesmoke;
+    font-size: 4rem;
+    position: relative;
+    text-transform: uppercase;
+    width: 0ch;
+    white-space: nowrap;
+    animation: typing 6s linear infinite alternate-reverse;
+    border-right: 0.4rem solid #2ed573;
+    overflow: hidden;
+   
+}
+
+
+
+/* .heading::before{
+     content: "Welcome To Job Portol";
+     width: 100%;
+     white-space: nowrap;
+     color: #2ed573;
+     position: absolute;
+     top: 0;
+     left: 0;
+     -webkit-animation: slide 3s linear infinite;
+     overflow: hidden;
+     
+} */
+
+@media only screen and (max-width: 600px) {
+    .heading {
+      font-size: 1.8rem ;
+    }
+  }
+
+@keyframes typing{
+    0%{
+        width: 0ch;
+    }
+    75%{
+        width: 21ch;
+    }
+    100%{
+        width :0ch;
+    }
+    
+    
+}
+
